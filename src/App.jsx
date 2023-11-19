@@ -1,15 +1,9 @@
-
-import { Products } from './components/Products'
-import { Timer } from './components/Timer'
+import { useState } from "react";
 
 function App() {
-
-  return (
-    <>
-      <Timer />
-      <Products />
-    </>
-  )
+  return <div>
+    
+  </div>;
 }
 
-export default App
+export default App;
