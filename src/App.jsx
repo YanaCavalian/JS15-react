@@ -1,6 +1,7 @@
 
 import { Products } from './components/Products'
 import { Timer } from './components/Timer'
+import { Location } from './components/Location'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Timer />
       <Products />
+      < Location />
     </>
   )
 }
