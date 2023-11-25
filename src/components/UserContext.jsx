@@ -9,9 +9,8 @@ export const useUser = () => {
 
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-
   const loginUser = (userData) => {
-    setUser(userData.user);
+    setUser(userData.user); 
   };
 
   const logoutUser = () => {

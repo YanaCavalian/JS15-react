@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useUser } from './UserContext';
 
 export const Header = () => {
   const userContext = useUser();
   const [loggedIn, setLoggedIn] = useState(Boolean(userContext.user));
-
-  useEffect(() => {
-    setLoggedIn(Boolean(userContext.user));
-  }, [userContext.user]);
 
   const handleLogin = async () => {
     try {
@@ -23,6 +19,7 @@ export const Header = () => {
       if (response.ok) {
         const data = await response.json();
         userContext.loginUser({ token: data.token, user: data });
+        setLoggedIn(true); 
       } else {
         console.error('Login failed');
       }
@@ -49,3 +46,4 @@ export const Header = () => {
     </header>
   );
 };
+
