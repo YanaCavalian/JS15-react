@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { Input } from "./components/input";
+import Input from "./components/Input";
 
 export const App = () => {
   const form = useForm({});
