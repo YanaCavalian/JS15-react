@@ -29,14 +29,7 @@ const ProductList = () => {
             <div className="product-container " key={product.id}>
               <h2>{product.title}</h2>
               <p>Price: ${product.price}</p>
-              <Link
-                to={{
-                  pathname: `/product/${product.id}`,
-                  state: { product },
-                }}
-              >
-                Details
-              </Link>
+              <Link to="/product/1">Details</Link>
             </div>
           ))}
         </div>

@@ -27,9 +27,7 @@ const ProductDetail = () => {
 
   return (
     <div className="detail">
-      <Link to="/" className="home">
-        Home
-      </Link>
+      <Link to="/">Home</Link>
       <h2>{product.title}</h2>
       <p>
         <span>Brand:</span> {product.brand}
