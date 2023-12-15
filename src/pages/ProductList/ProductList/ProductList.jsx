@@ -31,7 +31,7 @@ const ProductList = () => {
               <p>Price: ${product.price}</p>
               <Link
                 to={{
-                  pathname: `/JS15-react/product/${product.id}`,
+                  pathname: `/product/${product.id}`,
                   state: { product },
                 }}
               >
