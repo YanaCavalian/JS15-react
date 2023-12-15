@@ -27,7 +27,7 @@ const ProductDetail = () => {
 
   return (
     <div className="detail">
-      <Link to="/" className="home-btn">
+      <Link to="/JS15-react" className="home">
         Home
       </Link>
       <h2>{product.title}</h2>
